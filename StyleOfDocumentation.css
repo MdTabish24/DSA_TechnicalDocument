@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    position: fixed;
+    left: -550px;
+    transition: all .5s ease;
+    width: 250px;
+    height: 100%;
+}
+#btn:hover{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    color: wheat;
+    width: 50px;
+    font-size: 50px;
+}
+#cancel:hover{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    color: bisque;
+    width: 40px;
+    font-size: 50px;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label #btn{
+    left: 20px;
+    top: 25px;
+    font-size: 35px;
+    position: fixed;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    transition: all .5s ease;
+    position: fixed;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 300px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: linen;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section{
+    margin-top: 40px;
+}
+#Tabish1{
+    background-color: rgb(0,0,0,0.7);
+    width: 100%;
+    border-bottom: 1px solid;
+}
+#Tabish1 li{
+    border-top: 2px solid linen;
+    list-style: none;
+}
+#Tabish1 a{
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: bisque;
+    transition: text-indent 0.7s ease-in-out;
+}
+#Tabish1 a:hover{
+    font-weight: 650;
+    text-indent: 10px;
+}
+p{
+    margin: 10px;
+    font-size: 21px;
+}
+ol{
+    margin-left: 30px;
+    font-size: 21px;
+}
+header{
+    font-size: 31px;
+    color:darkred;
+    text-align: center;
+    background-image: url("https://giffiles.alphacoders.com/454/4543.gif");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+code{
+    display: block;
+    text-align: left;
+    white-space: pre;
+    font-size: 19px; 
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 0.8;
+    background-color: white;
+    padding: 0 15px;
+    margin: 35px;
+    border-radius: 10px;
+    color: black;
+}
+@media only screen and (min-width: 815px){
+    body{
+        flex-direction: row;
+    }
+    #Tabish1{
+        width: 20%;
+        position: fixed;
+        height: 100%;
+    }
+    #Tabish3{
+        margin: 0px 20px;
+        margin-left: 320px;
+    }
+} 
+.blink{
+    width: 40%;
+    animation: tabish 4s ease infinite;
+	animation-direction: alternate;
+}
+@keyframes tabish{
+	from{ padding-left: 650px; }
+	to { padding-right: 100px; }
+}
