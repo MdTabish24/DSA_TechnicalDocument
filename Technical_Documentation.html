@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="StyleOfDocumentation.css" />
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i id="btn" style="font-size: 35px;">⇶</i>
+        <i id="cancel" style="font-size: 37px;"><strong>☒</strong></i>
+    </label>
+    <div class="sidebar">
+        <nav id="Tabish1" class="index">
+            <header style="font-size: 25px;"><h2><strong><u>Data Structure and Algorithm</u></strong> </h2></header><br><br>
+            <ul>
+                <li><a class="Tabish2" href="#Introduction">Introduction</a></li>
+                <li><a class="Tabish2" href="#Data_Structure">Data Structure</a></li>
+                <li><a class="Tabish2" href="#Algorithms">Algorithms</a></li>
+                <li><a class="Tabish2" href="#Big_O_Notations">Big O Notations</a></li>
+                <li><a class="Tabish2" href="#Implementations">Implementations</a></li>
+                <li><a class="Tabish2" href="#Testing_And_Debuging">Testing And Debuging</a></li>
+                <li><a class="Tabish2" href="#References">References</a></li>
+                <li><a class="Tabish2" href="#Thank_You">Thank You</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="Tabish3">
+        <section id="Introduction">
+            <header><h2>Introduction</h2></header>
+            <p>A <u>data structure</u> is a particular way of organising data in a computer so that it can be used effectively. The idea is to reduce the space and time complexities of different tasks.<br>
+            The structure of the data and the synthesis of the algorithm are relative to each other. Data presentation must be easy to understand so the developer, as well as the user, can make an efficient implementation of the operation.
+ Data structures provide an easy way of organising, retrieving, managing, and storing data.<br><u> Here are the needs for Data:</u>
+  <ol>
+      <li>Data structure modification is easy. </li>
+      <li>It requires less time.</li>
+      <li>Save storage memory space. </li>
+      <li>Data representation is easy. </li>
+      <li>Easy access to the large database</li>
+  </ol></p>
+     <img style="width: 60%; margin-left: 20px; border-radius: 100px;" src="https://miro.medium.com/v2/resize:fit:1400/1*Yli-OjepjvP7JSbaNlbo3Q@2x.jpeg"><br><hr>
+        </section>
+        <section id="Data_Structure">
+            <header><h3>Data Structure</h3></header>
+            <p>A data structure is a specialized format for organizing, processing, retrieving and storing data. There are several basic and advanced types of data structures, all designed to arrange data to suit a specific purpose. Data structures make it easy for users to access and work with the data they need in appropriate ways. Most importantly, data structures frame the organization of information so that machines and humans can better understand it.<br>
+            For instance, in an object-oriented programming language, the data structure and its associated methods are bound together as part of a class definition. In non-object-oriented languages, there may be functions defined to work with the data structure, but they are not technically part of the data structure.<br><br>
+            <strong>Factors to consider when picking a data structure include the following:<br></strong>
+            <ol>
+                <li>What kind of information will be stored?</li>
+                <li>How will that information be used?</li>
+                <li>Where should data persist, or be kept, after it is created?</li>
+                <li>What is the best way to organize the data?</li>
+                <li>What aspects of memory and storage reservation management should be considered?</li>
+            </ol><br>
+            <div style="font-size: 21px;"><strong>Some examples of how data structures are used include the following:</strong></div>
+           <ol>
+               <li><b>Storing data.</b> Data structures are used for efficient data persistence, such as specifying the collection of attributes and corresponding structures used to store records in a database management system.</li>
+               <li><b>Managing resources and services.</b> Core operating system (OS) resources and services are enabled through the use of data structures such as linked lists for memory allocation, file directory management and file structure trees, as well as process scheduling queues.</li>
+               <li><b>Data exchange.</b> Data structures define the organization of information shared between applications, such as TCP/IP packets.</li>
+               <li><b>Indexing.</b> Even more sophisticated data structures such as B-trees are used to index objects, such as those stored in a database.</li>
+               <li><b>Searching.</b> Indexes created using binary search trees, B-trees or hash tables speed the ability to find a specific sought-after item</li>
+           </ol> </p>
+           <img style="margin-left: 20px; width: 60%; border-radius: 75px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20220520182504/ClassificationofDataStructure-660x347.jpg"><hr>
+        </section>
+        <section id="Algorithms">
+            <header><h3>Algorithms</h3></header>
+            <p>The word Algorithm means ” A set of finite rules or instructions to be followed in calculations or other problem-solving operations <br>
+            Algorithms play a crucial role in various fields and have many applications. Some of the key areas where algorithms are used include:
+            <ol>
+                <li><b>Computer Science:</b> Algorithms form the basis of computer programming and are used to solve problems ranging from simple sorting and searching to complex tasks such as artificial intelligence and machine learning.</li>
+                <li><b>Mathematics: </b> Algorithms are used to solve mathematical problems, such as finding the optimal solution to a system of linear equations or finding the shortest path in a graph.</li>
+                <li><b>Operations Research:</b> Algorithms are used to optimize and make decisions in fields such as transportation, logistics, and resource allocation.</li>
+                <li><b>Artificial Intelligence:</b> Algorithms are the foundation of artificial intelligence and machine learning, and are used to develop intelligent systems that can perform tasks such as image recognition, natural language processing, and decision-making.</li>
+                <li><b>Data Science:</b> Algorithms are used to analyze, process, and extract insights from large amounts of data in fields such as marketing, finance, and healthcare</li></ol><br>
+            <div style="font-size: 21px;">It can be understood by taking the example of cooking a new recipe. To cook a new recipe, one reads the instructions and steps and executes them one by one, in the given sequence. The result thus obtained is the new dish is cooked perfectly. Every time you use your phone, computer, laptop, or calculator you are using Algorithms. Similarly, algorithms help to do a task in programming to get the expected output.<br>
+ The Algorithm designed are language-independent, i.e. they are just plain instructions that can be implemented in any language, and yet the output will be the same, as expected.</div><br><br>
+ <strong><div style="font-size: 21px;">Types of Algorithms:</div></strong><br>
+ <ol>
+     <li>Brute Force Algorithm:</li>
+     It is the simplest approach to a problem. A brute force algorithm is the first approach that comes to finding when we see a problem.
+     <li>Recursive Algorithm:</li>
+     A recursive algorithm is based on recursion. In this case, a problem is broken into several sub-parts and called the same function again and again.
+     <li>Backtracking Algorithm:</li>
+     The backtracking algorithm builds the solution by searching among all possible solutions. Using this algorithm, we keep on building the solution following criteria. Whenever a solution fails we trace back to the failure point build on the next solution and continue this process till we find the solution or all possible solutions are looked after.
+     <li>Searching Algorithm:</li>
+     Searching algorithms are the ones that are used for searching elements or groups of elements from a particular data structure. They can be of different types based on their approach or the data structure in which the element should be found.
+     <li>Sorting Algorithm:</li>
+     Sorting is arranging a group of data in a particular manner according to the requirement. The algorithms which help in performing this function are called sorting algorithms. Generally sorting algorithms are used to sort groups of data in an increasing or decreasing manner.
+     <li>Hashing Algorithm:</li>
+     Hashing algorithms work similarly to the searching algorithm. But they contain an index with a key ID. In hashing, a key is assigned to specific data.
+     <li>Greedy Algorithm:</li>
+     In this type of algorithm, the solution is built part by part. The solution for the next part is built based on the immediate benefit of the next part. The one solution that gives the most benefit will be chosen as the solution for the next part.
+     <li>Dynamic Programming Algorithm:</li>
+     This algorithm uses the concept of using the already found solution to avoid repetitive calculation of the same part of the problem. It divides the problem into smaller overlapping subproblems and solves them.
+     <li>Randomized Algorithm:</li>
+     In the randomized algorithm, we use a random number so it gives immediate benefit. The random number helps in deciding the expected outcome.
+ </ol></p>
+ <img style="margin-left: 20px; width: 60%; border-radius: 75px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7OvZNgZz_1Q_8GSIzRO5KJ-v5_ARkezdZyuz_af3mMw&s"><br><hr><br> </section>
+        <section id="Big_O_Notations">
+            <header><h3>Big O Notations</h3></header>
+            <p>Big O notation is a powerful tool used in computer science to describe the time complexity or space complexity of algorithms. It provides a standardized way to compare the efficiency of different algorithms in terms of their worst-case performance. Understanding Big O notation is essential for analyzing and designing efficient algorithms.<br>
+            Big-O, commonly referred to as “Order of”, is a way to express the upper bound of an algorithm’s time complexity, since it analyses the worst-case situation of algorithm. It provides an upper limit on the time taken by an algorithm in terms of the size of the input. It’s denoted as O(f(n)), where f(n) is a function that represents the number of operations (steps) that an algorithm performs to solve a problem of size n.<br>
+            Big O notation is a mathematical notation used to describe the worst-case time complexity or efficiency of an algorithm or the worst-case space complexity of a data structure. It provides a way to compare the performance of different algorithms and data structures, and to predict how they will behave as the input size increases.<br><br>
+            <strong>Big O notation is important for several reasons:</strong>
+            <ol>
+                <li>Big O Notation is important because it helps analyze the efficiency of algorithms.</li>
+                <li>It provides a way to describe how the runtime or space requirements of an algorithm grow as the input size increases.</li>
+                <li>Allows programmers to compare different algorithms and choose the most efficient one for a specific problem.</li>
+                <li>Helps in understanding the scalability of algorithms and predicting how they will perform as the input size grows.</li>
+                <li>Enables developers to optimize code and improve overall performance.</li>
+            </ol><br>
+            <div style="font-size: 21px;"><strong>Below are some important Properties of Big O Notation:</strong></div>
+            <ol>
+              <li>Reflexivity: </li>
+            For any function f(n), f(n) = O(f(n)).
+            <li>Transitivity: </li>    
+            If f(n) = O(g(n)) and g(n) = O(h(n)), then f(n) = O(h(n)).
+            <li>Constant Factor: </li>
+            For any constant c > 0 and functions f(n) and g(n), if f(n) = O(g(n)), then cf(n) = O(g(n)).
+            <li>Sum Rule: </li>
+            If f(n) = O(g(n)) and h(n) = O(g(n)), then f(n) + h(n) = O(g(n)).
+            <li>Product Rule: </li>
+            If f(n) = O(g(n)) and h(n) = O(k(n)), then f(n) * h(n) = O(g(n) * k(n)).
+            <li>Composition Rule: </li>
+            If f(n) = O(g(n)) and g(n) = O(h(n)), then f(g(n)) = O(h(n)).<br>
+            </ol></p>
+            <img style="margin-left: 20px; width: 60%; border-radius: 75px;" src="https://media.geeksforgeeks.org/wp-content/uploads/20240329121436/big-o-analysis-banner.webp"><br><hr><br>
+        </section>
+        <section id="Implementations">
+            <header><h3>Implementations</h3></header>
+            <p>Data Structures are a way of organizing and storing data so that they can be accessed and worked with efficiently. They define the relationship between the data, and the operations that can be performed on the data. Some common data structures include Arrays, Linked Lists, Stacks, Queues, T+rees, and Graphs.<br>
+             Algorithms are a set of steps or rules to follow to solve a particular problem. They operate on data structures and solve specific problems. Algorithms can be designed using various methods like Recursion, Divide and Conquer, Dynamic Programming, etc.<br>
+             <strong>Here is a simple implementation of a data structure (Array) and an algorithm (Linear Search) in Java:</strong><br><code>
+                 public class Main {<br>
+                     public static void main(String[] args) {<br>
+                         int[] array = {10, 20, 30, 40, 50};<br>
+                         int searchElement = 30;<br>
+                         for (int i = 0; i < array.length; i++) {<br>
+                             if (array[i] == searchElement) {<br>
+                                 System.out.println("Element found at index: " + i);<br>
+                                 break;<br>
+                             }<br>
+                         }<br>
+                     }<br>
+                 }</code><br>
+                 Data structures are widely used in various applications, <strong>including:</strong><br>
+                 <ol>
+                     <li><strong>Database Management Systems:</strong> To store and manage large amounts of structured data1.</li>
+                     <li><strong>Operating Systems:</strong> To manage memory, processes, and files</li>
+                     <li><strong>Compiler Design:</strong> To represent source code and intermediate code</li>
+                     <li><strong>Artificial Intelligence:</strong> To represent knowledge and perform reasoning</li>
+                     <li><strong>Graphics and Computer Design:</strong> For example, 2D arrays (matrices) are used in image processing</li>
+                     <li><strong>Blockchain: </strong>To store and manage transaction data</li>
+                     <li><strong>Genetics:</strong> To model and manipulate DNA, RNA, and protein sequences</li>
+                     <li><strong>Image Processing:</strong> For example, digital images are stored as 2D arrays for processing</li>
+                 </ol><br><div style="font-size: 21px;">Each type of data structure has its own use-cases.<strong>For example:</strong></div>
+                 <ol>
+                     <li><strong>Arrays: </strong>Used in databases to store data in a tabular format, in games to arrange the leaderboard, and in image processing where each image is an array</li>
+                     <li><strong>Linked Lists: </strong>Used in operating systems to manage files, in browsers to store history, and in networking to implement IP routing tables</li>
+                     <li><strong>Stacks: </strong>Used in compilers for syntax checking, in operating systems for memory management, and in browsers to implement the back button</li>
+                     <li><strong>Queues: </strong>Used in operating systems for handling interrupts, in networking for managing packets, and in printers to manage print jobs</li>
+                     <li><strong>Trees: </strong>Used in databases and file systems to store information, in routers to store routing tables, and in computer graphics to model hierarchical objects</li>
+                     <li><strong>Graphs: </strong>Used in social networks to model relationships, in web crawling to visit web pages, and in GPS systems to find routes</li>
+                 </ol>
+            </p>
+            <img style="margin-left: 20px; width: 60%; border-radius: 75px;" src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa8a5a4fc-5cc9-44db-b8ca-08dd83c34737_1160x1384.png"><br><hr><br>
+        </section>
+        <section id="Testing_And_Debuging">
+            <header><h3>Testing And Debuging</h3></header>
+            <p><h5><div style="font-size: 21px;">Testing</div></h5>
+             <ol>
+                 <li>Testing is the process of verifying and validating that a software or application is bug-free, meets the technical requirements as guided by its design and development, and meets the user requirements effectively and efficiently by handling all the exceptional and boundary cases</li>
+                 <li>The purpose of software testing is to identify the errors, faults, or missing requirements in contrast to actual requirements</li>
+                 <li>Types of Testing include Manual Testing, White Box Testing, Black Box Testing, Gray Box Testing, Automated Testing, Functional Testing, Unit Testing, Integration Testing, System Testing, Performance Testing, Usability Testing, and Compatibility Testing</li>
+             </ol>
+             <h5><div style="font-size: 21px;">Debuging</div></h5>
+             <ol>
+                 <li>Debugging is the process of fixing a bug in the software. It can be defined as identifying, analyzing, and removing errors</li>
+                 <li>This activity begins after the software fails to execute properly and concludes by solving the problem and successfully testing the software</li>
+                 <li>It is considered to be an extremely complex and tedious task because errors need to be resolved at all stages of debugging</li>
+                 <li>Debugging typically involves using tools and techniques such as logging, tracing, and code inspection</li></ol><br>
+                 <strong><div style="font-size: 21px;">In the context of DSA, testing and debugging are crucial for ensuring the correctness and efficiency of your data structures and algorithms. Here’s how you might apply these concepts:</div></strong>
+                 <ol>
+                     <li><strong>Testing DSA:</strong> You would test your data structures and algorithms by creating various test cases, including edge cases, to ensure that they work as expected. For example, if you’ve implemented a sorting algorithm, you would test it with different types of input arrays (e.g., already sorted, reverse sorted, random) to ensure that it correctly sorts all of them.</li>
+                     <li><strong>Debugging DSA: </strong>If your data structure or algorithm doesn’t pass all the test cases, you would need to debug it. This involves identifying the issue, understanding why it’s happening, and then modifying your code to fix the issue. Debugging tools like breakpoints, step-through execution, and variable watches can be very helpful in this process.</li>
+                 </ol></p><br>
+                 <img style="margin-left: 20px; width: 60%; border-radius: 75px;" src="https://static.javatpoint.com/tutorial/software-testing/images/testing-vs-debugging2.png"><hr><br>
+        </section>
+        <section id="References">
+            <header><h3>References</h3></header>
+            <p><strong> Here are some recommended books and websites for learning Data Structures and Algorithms (DSA):</strong><br>
+             <h5><div style="font-size: 21px;">Books</div></h5>
+             <ol>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/#1-introduction-to-algorithms-by-thomas-h-cormen-charles-e-leiserson-ronald-l-rivest-and-clifford-stein">“Introduction to Algorithms” by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein12. This book is one of the most popular books for in-depth knowledge of DSA. It includes several algorithms, along with their analysis and implementation</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/#2-data-structures-and-algorithms-made-easy-by-narasimha-karumanchi">“Data Structures and Algorithms Made Easy” by Narasimha Karumanchi1. This book focuses on helping readers understand and master the principles of DSA. It covers a broad variety of subjects related to DSA and is suitable for beginners as well as intermediate programmers</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/#3-algorithms-by-robert-sedgewick-and-kevin-wayne">“Algorithms” by Robert Sedgewick and Kevin Wayne</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/#4-data-structures-and-algorithm-analysis-in-java-by-mark-allen-weiss">“Data Structures and Algorithm Analysis in Java” by Mark Allen Weiss</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/#5-cracking-the-coding-interview-by-gayle-laakmann-mcdowell">“Cracking the Coding Interview” by Gayle Laakmann McDowell</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/#6-the-algorithm-design-manual-by-steven-s-skiena">“The Algorithm Design Manual” by Steven S. Skiena</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/#7-the-art-of-computer-programming-by-donald-e-knuth">“The Art of Computer Programming” by Donald E. Knuth</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/#8-algorithms-by-jeff-erickson">“Algorithms” by Jeff Erickson</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/#9-problem-solving-with-algorithms-and-data-structures-using-python-by-bradley-n-miller-and-david-l-ranum">“Problem Solving with Algorithms and Data Structures Using Python” by Bradley N. Miller and David L. Ranum</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/#10-introduction-to-algorithms-a-creative-approach-by-udi-manber">“Introduction to Algorithms: A Creative Approach” by Udi Manbe</a></li>
+             </ol>
+             <h5><div style="font-size: 21px;">Webssites</div></h5>
+             <ol>
+                 <li><a style="color: black;" target="_blank" href="https://www.geeksforgeeks.org/best-data-structures-and-algorithms-books/">GeeksforGeeks1: A computer science portal with well-explained articles on DSA.</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.w3schools.com/dsa/dsa_intro.php">W3Schools3: Offers tutorials on DSA with examples</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://www.sanfoundry.com/best-reference-books-data-structure-algorithms/">Sanfoundry4: Provides a list of the best reference books on DSA.</a></li>
+                 <li><a style="color: black;" target="_blank" href="https://medium.com/javarevisited/10-best-books-for-data-structure-and-algorithms-for-beginners-in-java-c-c-and-python-5e3d9b478eb1">Medium2: Contains articles on DSA written by various authors.</a></li>
+             </ol>
+         </p><br><hr><br>
+        </section>
+        <section id="Thank_You">
+            <header><h3>-Thank You-</h3></header>
+            <p>
+             This Technical Documentation is created by Mohammad Tabish. In S.Y BSc IT[A].<br>
+             I am glad that you have given your precious time for visiting my Documentation, I hope this had help you a bit for understanding about DSA in short.
+            </p><img class="blink" src="https://st.depositphotos.com/1823785/2635/i/450/depositphotos_26357903-stock-photo-natural-looking-label-with-thank.jpg">
+        </section> 
+     </main>
+</body>
+</html>
